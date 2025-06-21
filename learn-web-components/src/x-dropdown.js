@@ -1,5 +1,13 @@
 const template = document.createElement('template')
 template.innerHTML = `
+  <style>
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+    }
+  </style>
+
   <button></button>
   <div>
     <slot></slot>

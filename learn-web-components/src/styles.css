@@ -1,0 +1,9 @@
+:root {
+  --primary-color: blue;
+  --secondary-color: #03dac6;
+}
+
+paragraph-part-style::part(custom-part) {
+  color: blue;
+}
+

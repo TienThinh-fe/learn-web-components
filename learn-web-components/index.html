@@ -5,15 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Learn Web Components</title>
+
+  <link rel="stylesheet" href="./src/styles.css">
 </head>
 
 <body>
-  <x-dropdown title="Collapse">
+  <!-- <x-dropdown title="Collapse">
     Hello, World!
-  </x-dropdown>
+  </x-dropdown> -->
 
   <!-- <custom-component-with-prop name="ABCD"></custom-component-with-prop> -->
   <!-- <custom-component-with-event></custom-component-with-event> -->
+
+  <!-- <button-change-style></button-change-style> -->
+
+  <!-- <paragraph-with-host-style></paragraph-with-host-style> -->
+  <p>
+    This is paragraph with global style
+  </p>
+
+  <paragraph-part-style><span>ABC</span></paragraph-part-style>
 
   <script type="module" src="./src/main.js"></script>
 </body>
