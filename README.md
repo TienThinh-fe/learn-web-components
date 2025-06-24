@@ -1,17 +1,69 @@
 # learn-web-components
 
-A project for learning and experimenting with Web Components using vanilla JavaScript.
+A project for learning and experimenting with Web Components using vanilla JavaScript and TypeScript.
 
 ## Project Structure
 
 ```
 learn-web-components/
-├── README.md
-├── index.html          # Main HTML file with component usage examples
-├── package.json        # Project configuration and dependencies
-├── src/
-│   └── main.js        # Web component implementations
-└── .gitignore         # Git ignore rules
+├── README.md                     # This file
+├── learn-web-components/         # Basic web components examples (JavaScript)
+│   ├── index.html
+│   ├── package.json
+│   └── src/
+│       ├── main.js
+│       ├── styles.css
+│       └── *.js                  # Various component examples
+└── sw-character-web-components/  # Star Wars character app (TypeScript)
+    ├── README.md
+    ├── index.html
+    ├── package.json
+    ├── tsconfig.json
+    └── src/
+        ├── main.ts
+        ├── style.css
+        ├── types.d.ts
+        └── components/
+            ├── x-character-list.ts
+            └── x-character-detail.ts
+```
+
+## Projects
+
+### 1. learn-web-components (JavaScript)
+
+Basic web components examples demonstrating fundamental concepts like:
+
+- Custom dropdown component
+- Event handling
+- Styling with CSS parts
+- Component properties
+- Host styling
+
+**To run:**
+
+```bash
+cd learn-web-components
+npm install
+npm run dev
+```
+
+### 2. sw-character-web-components (TypeScript)
+
+A Star Wars character browser application built with web components, featuring:
+
+- Character list component that fetches data from SWAPI
+- Character detail view with navigation
+- TypeScript for type safety
+- Custom events for component communication
+- Responsive design
+
+**To run:**
+
+```bash
+cd sw-character-web-components
+npm install
+npm run dev
 ```
 
 ## Components
@@ -44,10 +96,13 @@ A custom dropdown web component that provides a toggleable content area.
 
 1. Clone the repository
 2. Navigate to the project directory:
+
    ```bash
    cd learn-web-components
    ```
+
 3. Install dependencies:
+
    ```bash
    npm install
    ```
